@@ -1,0 +1,139 @@
+/* Fundo escuro suave para a página */
+html, body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #1f2937, #111827);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e4e6eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Container centralizado com largura limitada e fundo claro */
+.principal {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+    
+}
+
+/* Input estilizado */
+#busca {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  color: #111827;
+  font-weight: 500;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#busca::placeholder {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+#busca:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
+
+/* Botão estilizado */
+button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 14px 0;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 4px 16px rgba(29, 78, 216, 0.4);
+}
+
+button:active {
+  background-color: #1e40af;
+}
+
+/* Lista de resultados */
+ul {
+  margin: 0; /* já tem espaçamento pelo gap */
+  padding: 0;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  text-align: left;
+  color: #111827;
+}
+
+/* Itens da lista */
+li {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease;
+}
+
+li:hover {
+  background-color: #e0e7ff;
+}
+
+/* Avatar do usuário */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 14px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Link do usuário */
+li a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  word-break: break-word;
+}
+
+li a:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+/* Mensagem de erro  */
+.not-found {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  color: #dc2626;
+  font-size: 18px;
+  text-align: center;
+}
+
+.titulo {
+    margin-right: 2rem;
+}
